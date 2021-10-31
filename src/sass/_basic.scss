@@ -1,0 +1,56 @@
+//Import fonts from Adobe
+@import url("https://use.typekit.net/bxq6lhv.css");
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400";
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/*variables*/
+$main-color:#b6f8e4;
+$darker-main-color: darken($main-color, 25%);
+$lighter-main-color: lighten($main-color, 15%);
+$yellow-color: #fbff00;
+$red-color: #e61a98;
+$white-color: white;
+$green-color: #2ecc71;
+$button-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$border-radius: 10px;
+$button-padding: 15px;
+
+/*if-statement*/
+@mixin respond ($breakpoint) {
+
+    @if $breakpoint==smallerscreen {
+       @media only screen and (max-width: 1000px) {
+       @content;
+    }
+  }
+ 
+}
+
+//Mixins
+@mixin button-common() {
+    color: $white-color;
+    background-color: transparent;
+    outline:0;
+    font-family: $button-font;
+    border:0;
+    min-width: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1.2em;
+    margin: 2px;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin button-filled($color) {
+    background-color: $color;
+    
+    &:hover {
+        background-color: darken($color, 10%);
+    }  
+}
