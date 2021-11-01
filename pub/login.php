@@ -27,7 +27,7 @@ $contents = explode("\n", $contents);
             <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/education.html">Utbildning</a></li>
             <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/webbpages.html">Webbplatser</a></li>
             <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/work.html">Erfarenheter</a></li>
-            <li class="visited"><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/login.php">Logga in</a></li>
+            <li class="visited"><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii_admin/login.php">Logga in</a></li>
         </ul>
     </nav>
     <div class="container">
