@@ -21,6 +21,15 @@ $contents = explode("\n", $contents);
 <body>
 
 <header><h1>Portfolio admin</h1></header>
+<nav>
+        <ul>
+            <li class="visited"><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/index.html">Hem</a></li>
+            <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/education.html">Utbildning</a></li>
+            <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/webbpages.html">Webbplatser</a></li>
+            <li><a href="https://studenter.miun.se/~fegi2000/writeable/projekt_wiii/work.html">Erfarenheter</a></li>
+            <li><a href="login.php" class="visited">Logga in</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <!--form for login-->
         <section class="loginwrapper">
